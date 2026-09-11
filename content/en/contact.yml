@@ -1,0 +1,61 @@
+seo:
+  title: "Contact Us | Yelinktrans"
+  description: "Contact Yelinktrans about localization, AI solution design and implementation, multilingual data annotation and collection, or content testing and review."
+
+hero:
+  eyebrow: "CONTACT YELINKTRANS"
+  title: "Work With Us"
+  description: "Whether you already have a defined project or are still exploring options for multilingual content, data processing or AI, you can start by emailing us."
+  note: "If the requirement is still taking shape, simply tell us about the business context and the problem you hope to solve."
+  tags: ["EMAIL", "PROJECT", "SOLUTION"]
+
+methods:
+  eyebrow: "CONTACT DETAILS"
+  title: "Start the Conversation by Email"
+  description: "Briefly introduce the business context and your requirement. We will make an initial assessment and confirm any additional materials, samples or discussions needed for the next step."
+  items:
+    - icon: "lucide:mail"
+      label: "Primary contact"
+      value: "James@yelinktrans.com"
+      href: "mailto:James@yelinktrans.com?subject=Website%20Project%20Inquiry"
+    - icon: "lucide:mail"
+      label: "Alternative contact"
+      value: "Mike@yelinktrans.com"
+      href: "mailto:Mike@yelinktrans.com?subject=Website%20Project%20Inquiry"
+    - icon: "lucide:building-2"
+      label: "Location"
+      value: "Wuxi, Jiangsu, China"
+    - icon: "lucide:messages-square"
+      label: "Communication languages"
+      value: "Chinese and English"
+
+brief:
+  eyebrow: "WHAT TO INCLUDE"
+  title: "What to Include in Your First Email"
+  description: "You do not need to provide everything at once. Share what you already know, and we will use it to determine the next step."
+  items:
+    - title: "Service needed"
+      description: "For example, localization, AI solution design and implementation, data annotation and collection, or content testing and review across languages."
+    - title: "Target languages or markets"
+      description: "For example, English, Japanese, German or Arabic, or specific target countries and regions."
+    - title: "Content or data type"
+      description: "For example, product interfaces, help content, marketing content, text, images, audio or test materials."
+    - title: "Estimated project scale"
+      description: "Approximate word or character count, data volume, file count, number of languages or project duration. It is fine if the scale is not yet confirmed."
+    - title: "Timeline"
+      description: "Expected start date, first delivery date and overall completion date."
+    - title: "Other important requirements"
+      description: "For example, quality standards, terminology, technical environment, data security, confidentiality requirements or current workflows."
+
+safety:
+  title: "A Note on Information Security"
+  paragraphs:
+    - "In your first email, please avoid sending personal information that has not been de-identified, complete client datasets, or full files covered by a confidentiality agreement."
+    - "If samples, test data or other project materials are needed, we can agree on an appropriate transfer method after clarifying the requirement."
+
+primaryCta:
+  label: "Send a Project Inquiry"
+  href: "mailto:James@yelinktrans.com?subject=Website%20Project%20Inquiry"
+secondaryCta:
+  label: "View Services & Expertise"
+  href: "/services"

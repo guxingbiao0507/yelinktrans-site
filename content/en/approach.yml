@@ -1,0 +1,101 @@
+seo:
+  title: "How We Work | From Real Problems to Practical Solutions | Yelinktrans"
+  description: "See how Yelinktrans uses needs assessment, solution design, pilot validation, delivery and continuous improvement to put multilingual content, data and AI solutions into practice."
+
+hero:
+  eyebrow: "WORKING APPROACH"
+  title: "Start with the problem. Make the solution work."
+  titleLines: ["Start with the Problem.", "Make the Solution Work."]
+  description: "Inspired by Forward Deployed Engineering (FDE), we work from the client's real needs and constraints, using needs assessment, solution design and focused validation to reduce uncertainty before moving into stable delivery and continuous improvement."
+  note: "Here, FDE describes a way of working that stays close to real business problems. It does not imply long-term on-site staffing or that we provide every type of software-development service."
+  tags: ["DIAGNOSE", "VALIDATE", "DELIVER"]
+
+intro:
+  eyebrow: "WHY THIS APPROACH"
+  title: "Define the Problem Before Designing the Solution."
+  paragraphs:
+    - "Challenges in multilingual projects rarely come from translation alone. Content type, release pace, quality standards, supplier coordination, data structure and technical tools can all affect the outcome."
+    - "That is why we do not begin with a preferred model, tool or fixed workflow. We first clarify what the client needs to improve, which constraints cannot change and what a verifiable result looks like."
+  callout: "Language-service expertise + AI and data capabilities + business-focused solution consulting"
+
+steps:
+  eyebrow: "FIVE-STAGE PROCESS"
+  title: "Five Stages to Turn Complexity into Action."
+  description: "Each stage produces a clear decision or deliverable. A project can begin at the stage that best fits its current needs, or start with a focused pilot."
+  items:
+    - number: "01"
+      icon: "lucide:target"
+      title: "Needs Assessment"
+      description: "Clarify business goals, content or data types, current processes, quality issues, timing, budget constraints and the technical environment, then identify the real problem to solve."
+      outputs: ["Requirements and issue list", "Success criteria", "Scope and constraints"]
+    - number: "02"
+      icon: "lucide:clipboard-list"
+      title: "Solution Design"
+      description: "Bring together language professionals, workflows, AI tools, quality rules and data methods, then define roles, deliverables, quality targets, change procedures and acceptance criteria."
+      outputs: ["Service and workflow plan", "Roles and responsibilities", "Quality and acceptance standards"]
+    - number: "03"
+      icon: "lucide:flask-conical"
+      title: "Pilot Validation"
+      description: "Select representative samples or a limited task scope to test quality, efficiency, cost and risk, record issues and refine the solution based on evidence."
+      outputs: ["Pilot samples and results", "Issue and risk records", "Adjustment recommendations"]
+    - number: "04"
+      icon: "lucide:rocket"
+      title: "Delivery & Implementation"
+      description: "Move into production using the confirmed scope and workflow, managing resources, milestones, quality checks, issue escalation and changes so the solution can run consistently."
+      outputs: ["Project plan", "Milestone deliveries", "Quality and progress records"]
+    - number: "05"
+      icon: "lucide:refresh-cw"
+      title: "Continuous Improvement"
+      description: "Review delivery data and issue records, capture terminology, rules, samples and regression results, and steadily improve quality, efficiency and collaboration."
+      outputs: ["Review and improvement actions", "Language and quality assets", "Follow-up improvement plan"]
+
+scenarios:
+  eyebrow: "WHEN IT FITS"
+  title: "Where This Approach Adds the Most Value."
+  description: "Projects with standard requirements and a stable scope can move directly into routine delivery. Upfront assessment and validation add more value when a challenge spans content, process, quality, data or AI tools."
+  items:
+    - title: "Content and Language Coverage Keeps Growing"
+      titleLines: ["Content and Language", "Coverage Keeps Growing"]
+      description: "Existing workflows begin to come under pressure from cost, speed, consistency or supplier coordination."
+    - title: "AI Adoption Needs Clear Decision Criteria"
+      titleLines: ["AI Adoption Needs", "Clear Decision Criteria"]
+      description: "Models, content suitability, quality risks and the right level of human review need to be evaluated."
+    - title: "Quality Issues Keep Recurring"
+      titleLines: ["Quality Issues", "Keep Recurring"]
+      description: "Problems can be identified, but shared standards, root-cause records and regression testing are missing."
+    - title: "The Work Spans Several Functions"
+      titleLines: ["The Work Spans", "Several Functions"]
+      description: "Content, data, language professionals, tools and internal business teams all need to be coordinated."
+
+collaboration:
+  eyebrow: "CLEAR RESPONSIBILITIES"
+  title: "Clear Information. Clear Responsibilities. Less Rework."
+  titleLines: ["Clear Information.", "Clear Responsibilities.", "Less Rework."]
+  description: "Before work begins, we confirm what information each side needs to provide and who is responsible for what. The exact division of work depends on scope, and critical assumptions are not left until the end of delivery."
+  descriptionLines:
+    - "Before work begins, we confirm what information each side needs to provide and who is responsible for what."
+    - "The exact division of work depends on scope, and critical assumptions are not left until the end of delivery."
+  descriptionNoWrapText: "until the end of delivery"
+  clientTitle: "What We Typically Need from the Client"
+  clientItems:
+    - "Business goals, target markets and use cases"
+    - "Necessary content, samples, terminology and information about current processes"
+    - "Named internal decision-makers, reviewers and acceptance standards"
+    - "Timely feedback on requirement changes and pilot results"
+  yelinkTitle: "What Yelinktrans Typically Handles"
+  yelinkItems:
+    - "Clarifying the problem, risks, constraints and verifiable goals"
+    - "Designing and explaining the service scope, workflow, tools and quality plan"
+    - "Organizing language professionals, pilots and production delivery"
+    - "Recording key decisions, issues, changes and improvement results"
+
+cta:
+  eyebrow: "START WITH A CONVERSATION"
+  title: "Discuss Your Requirements"
+  description: "Based on the information available, we can assess whether the requirement is ready for direct delivery, should begin with a sample pilot, or needs further clarification of the process and quality standards."
+  primary:
+    label: "Contact Us"
+    href: "/contact"
+  secondary:
+    label: "View Services & Expertise"
+    href: "/services"

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3f8fc"/>
+      <stop offset="1" stop-color="#dcecf9"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f75b5" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#30b7a2" stop-opacity=".5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#background)"/>
+  <circle cx="1035" cy="-40" r="350" fill="none" stroke="#2f75b5" stroke-opacity=".11" stroke-width="2"/>
+  <circle cx="1035" cy="-40" r="270" fill="none" stroke="#2f75b5" stroke-opacity=".08" stroke-width="60"/>
+  <g transform="translate(72 70)">
+    <rect width="64" height="64" rx="16" fill="#0b2b4b"/>
+    <circle cx="61" cy="3" r="10" fill="#30b7a2"/>
+    <text x="32" y="45" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#fff">Y</text>
+    <text x="83" y="28" font-family="Noto Sans SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="26" font-weight="700" fill="#071d31">源译</text>
+    <text x="83" y="52" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="4" fill="#597086">YELINKTRANS</text>
+  </g>
+  <g transform="translate(72 225)" font-family="Noto Sans SC, PingFang SC, Microsoft YaHei, Arial, sans-serif">
+    <text font-size="18" font-weight="600" fill="#40576c">AI驱动的多语言内容服务、数据与解决方案</text>
+    <text y="78" font-size="64" font-weight="700" fill="#071d31">源于专业</text>
+    <text y="164" font-size="76" font-weight="700" fill="#2f75b5">译见价值</text>
+  </g>
+  <g fill="none" stroke="url(#line)" stroke-linecap="round" transform="translate(745 235)">
+    <path d="M15 165C90 35 260 22 370 130" stroke-width="3"/>
+    <path d="M55 246C145 315 295 300 400 185" stroke-width="2"/>
+    <path d="M40 105l105 110 95-145 120 95" stroke-width="2.5"/>
+    <g fill="#fff" stroke="#2f75b5" stroke-width="2">
+      <circle cx="40" cy="105" r="26"/><circle cx="145" cy="215" r="26"/>
+      <circle cx="240" cy="70" r="26"/><circle cx="360" cy="165" r="26"/>
+    </g>
+    <g fill="#123e65" stroke="none" font-family="Noto Sans SC, Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle">
+      <text x="40" y="111">ZH</text><text x="145" y="221">EN</text>
+      <text x="240" y="76">JA</text><text x="360" y="171">DE</text>
+    </g>
+  </g>
+  <rect x="72" y="555" width="1056" height="1" fill="#bdcbd7"/>
+  <text x="72" y="592" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#597086">180+ LANGUAGES · 20,000+ GLOBAL LANGUAGE TALENT RESOURCES</text>
+</svg>

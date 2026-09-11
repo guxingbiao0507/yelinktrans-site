@@ -1,0 +1,180 @@
+seo:
+  title: "Services & Expertise | Multilingual Content, Data and AI Solutions | Yelinktrans"
+  description: "Explore Yelinktrans services in localization, AI solution design and implementation, multilingual data annotation and collection, and content testing and review, supported by anonymized historical project experience from our core team."
+
+hero:
+  eyebrow: "SERVICES & EXPERTISE"
+  title: "Expert services for content and products across global markets"
+  titleLines: ["Expert Services for", "Content and Products", "Across Global Markets"]
+  description: "We bring together language professionals, quality processes, data methods and AI tools to fit the content type, target market, quality risk, delivery pace and budget—creating a project plan that is practical, transparent and verifiable."
+  note: "Languages, volumes, schedules and response times are confirmed for each project before work begins."
+  tags: ["CONTENT", "DATA", "AI"]
+
+overview:
+  eyebrow: "CORE SERVICES"
+  title: "Start with the need. Shape the right service plan."
+  titleLines: ["Start with the Need.", "Shape the Right Service Plan."]
+  description: "Quality expectations and the right level of human oversight vary by content and business stage. Rather than forcing every project into a standard workflow, we clarify the goals and constraints first, then shape the scope, deliverables and acceptance criteria around what the project actually needs."
+  descriptionLines:
+    - "Quality expectations and the right level of human oversight vary by content and business stage."
+    - "Rather than forcing every project into a standard workflow, we clarify the goals and constraints first, then shape the scope, deliverables and acceptance criteria around what the project actually needs."
+  descriptionNoWrapText: "Quality expectations and the right level of human oversight"
+
+services:
+  - id: "localization"
+    icon: "lucide:languages"
+    title: "Multilingual Localization"
+    summary: "End-to-end localization for product interfaces, help content, marketing and operations—from translation through language asset maintenance."
+    challenge: "Global content is often spread across products, files and versions. As language coverage grows, updates accelerate and formats become more complex, inconsistent terminology, style or workflows can lead to rework, delayed releases and an uneven brand voice."
+    scope:
+      - "Requirements clarification and project feasibility assessment"
+      - "Human translation, review and MTPE"
+      - "Creation and maintenance of terminology, style guides and translation memories"
+      - "Desktop publishing, format checks and pre-delivery language quality checks"
+    evidence: "The core team has supported large multilingual programs in consumer electronics, internet content, cross-border e-commerce and gaming. Historical experience includes individual programs spanning 28 to more than 80 languages, annual volumes reaching tens of millions of source characters and continuous version updates."
+    boundary: "Languages, daily throughput and delivery schedules are confirmed for each project. High-risk professional content, including medical and legal material, requires separate confirmation of specialist qualifications and review procedures."
+
+  - id: "ai-solutions"
+    icon: "lucide:sparkles"
+    title: "AI Solution Design & Implementation"
+    summary: "Identify where AI adds value in translation, quality assurance and content workflows, then move the solution from sample validation into practical use."
+    challenge: "Using general-purpose AI without a defined framework can lead to terminology drift, context errors and changes that are difficult to trace. Before implementation, organizations need to identify suitable content, quality targets, evaluation methods and the right level of human review."
+    scope:
+      - "Model and tool selection, evaluation and sample pilots"
+      - "AI translation, AI post-editing and human-review workflow design"
+      - "Terminology, rules and automated quality-check configuration"
+      - "Workflow implementation, quality reporting and continuous improvement"
+    evidence: "The core team has participated in AI translation pilots, model evaluation, AI post-editing, automated quality checks and multilingual content-tiering programs, with experience in process design, defining quality targets and human–AI collaboration."
+    boundary: "AI output is not automatically ready for publication. The level of human review depends on content risk and quality targets. Without representative samples, terminology or acceptance criteria, we do not promise a fixed percentage improvement in quality."
+
+  - id: "data"
+    icon: "lucide:database-zap"
+    title: "Multilingual Data Annotation & Collection"
+    summary: "Collection, cleansing, annotation, quality sampling and rework closure for multilingual text, image and audio data."
+    challenge: "Successful multilingual data programs depend on more than sample volume. Data sources, language and regional distribution, annotation guidelines, quality sampling and version tracking must all be clearly defined, or the reliability of model training and evaluation may suffer."
+    scope:
+      - "Text, image and audio data collection within mainland China"
+      - "Data cleansing, deduplication, named entity recognition and text classification"
+      - "Semantic segmentation, object detection, transcription and parallel-corpus processing"
+      - "Tool-assisted pre-annotation, human validation, sampling and rework reports"
+    evidence: "The core team has participated in cross-border e-commerce annotation, named entity recognition, text classification, sentiment and risk tagging, parallel-corpus processing and data programs related to large language models."
+    boundary: "Data collection is currently limited to mainland China. Projects involving personal information, sensitive information, information about minors or restricted data require prior confirmation of lawful sources, authorization and processing methods."
+
+  - id: "testing"
+    icon: "lucide:scan-search"
+    title: "Multilingual Content Testing & Review"
+    summary: "Language quality checks using screenshots, recordings or physical devices, supported by issue logging, fix confirmation and regression testing."
+    challenge: "Once content appears in a live interface or on a physical device, problems such as truncation, garbled text, font and layout defects, contextual errors, or missing buttons and resources may emerge. Reviewing the text alone often cannot reveal these in-context issues."
+    scope:
+      - "Confirmation of test scope, devices, versions and acceptance criteria"
+      - "Multilingual LQA using screenshots, recordings or physical devices"
+      - "Issue severity, reproduction steps and recommended corrections"
+      - "Fix confirmation, regression testing and issue summaries"
+    evidence: "The core team has conducted LQA based on screenshots, video and physical devices for consumer electronics, internet content and gaming programs, and has participated in end-to-end test management and quality-metric design."
+    boundary: "This service focuses on linguistic, display and text-related issues. It does not replace full functional testing, information security testing, regulatory certification or legal advice for a target market."
+
+industries:
+  eyebrow: "FOCUS INDUSTRIES"
+  title: "Different Industries. The Right Delivery Model for Each."
+  description: "Content formats, release frequency, quality risks and user contexts vary by industry. We tailor terminology management, quality standards, testing methods and AI solutions to match."
+  descriptionNoWrapText: "testing methods and AI solutions"
+  items:
+    - icon: "lucide:smartphone"
+      title: "Consumer Electronics"
+      description: "For smartphones, smart devices, wearables, in-vehicle systems and IoT products, covering interface, help and marketing content as well as language testing on physical devices."
+    - icon: "lucide:panels-top-left"
+      title: "Internet and Technology"
+      description: "For enterprise software, applications, platforms and digital content, supporting frequent releases, synchronized delivery across languages, terminology consistency and content quality management."
+    - icon: "lucide:shopping-bag"
+      title: "Cross-Border E-commerce"
+      description: "For corporate websites, independent stores and e-commerce platforms, covering interface, product and marketing content while balancing scale, business value, release pace and cost."
+    - icon: "lucide:gamepad-2"
+      title: "Gaming"
+      description: "For in-game, live-operations and marketing content, supporting translation, review, terminology management, linguistic quality testing and issue closure."
+
+cases:
+  eyebrow: "SELECTED EXPERIENCE"
+  title: "Practical Solutions, Shaped by Experience."
+  items:
+    - id: "CASE 01"
+      industry: "Consumer Electronics · Internet and Technology"
+      title: "Complex Multilingual Content and Smart-Device Delivery"
+      profile: "A leading Chinese enterprise in ICT infrastructure, smart devices and artificial intelligence, delivering technology products to markets worldwide."
+      scale: "Historical project scale: 80+ languages; 50 million+ source characters per year"
+      services: ["Multilingual human translation", "Multilingual AI post-editing", "Screenshot-based LQA", "Text and image annotation"]
+      challenge:
+        - "Translation quality needed to reflect the brand's positioning and tone."
+        - "Multiple products and use cases ran in parallel, making language assets, terminology and versions difficult to manage consistently."
+        - "Large recurring volumes required coordination across teams and time zones, increasing the risk of human error."
+        - "Errors in high-risk content could cause reputational harm and adverse public attention."
+        - "Small-screen devices were vulnerable to truncation and inappropriate abbreviations."
+      approach:
+        - "Helped establish tiered linguist qualification, resource grouping, ongoing quality monitoring and dynamic level adjustment."
+        - "Helped build terminology categories, usage priorities and conflict-resolution rules to improve consistency across use cases."
+        - "Mapped the systems, workflows, compliance requirements and data-security needs of both parties, supporting middleware and customized workflow connections that reduced repetitive manual work."
+        - "Aligned review effort with defined content-risk levels, using sensitive-term and semantic rules to focus checks on higher-risk content."
+        - "Applied length constraints, screenshot mapping and abbreviation rules to identify small-screen truncation risks earlier in the translation process."
+
+    - id: "CASE 02"
+      industry: "Consumer Electronics"
+      title: "AI-Assisted Translation and Rule-Based Quality Checks"
+      profile: "A global consumer electronics and smart-hardware brand expanding smartphones, IoT devices and related products into international markets."
+      scale: "Historical project scale: 45+ languages; 10 million+ source characters per year"
+      services: ["Multilingual human translation", "Multilingual AI post-editing", "Screenshot-based LQA", "Desktop publishing"]
+      challenge:
+        - "The client needed to determine where AI was suitable across different types of localization content and where its limits should be set."
+        - "Terminology errors, violations of language-specific rules and errors in critical information needed to be reduced while keeping the cost of human review under control."
+      approach:
+        - "Participated in AI solution consulting, sample evaluation, workflow customization and implementation guidance, defining where AI could be used and how much human review each risk level required."
+        - "Built and refined rule sets covering grammatical gender, word stems, antonyms and sensitive terms, combining rule-based tools with LLM-assisted checks and focused human review for high-risk issues."
+
+    - id: "CASE 03"
+      industry: "Internet and Technology · Digital Content"
+      title: "High-Frequency Content Production and Structured Review Knowledge"
+      profile: "A global short-form video and social platform operator managing multilingual online content ecosystems across multiple countries."
+      scale: "Historical project scale: 56+ languages; 25 million+ source characters per year"
+      services: ["Software and app localization", "Localization of short-form drama, fiction and game content", "Content review for global markets"]
+      challenge:
+        - "Accelerating content production and release cycles required a workable balance of cost, speed and quality."
+        - "Content-review knowledge needed continuous development and a structure that machines could read and apply."
+      approach:
+        - "Helped organize subtitle production, timing, visual-context translation, AI quality checks and AI dubbing into an orchestrated automation workflow."
+        - "Expanded review knowledge from broad categories into a three-level hierarchy and machine-readable structure, adding semantic identification and decision rules beyond lexical matching."
+
+    - id: "CASE 04"
+      industry: "Cross-Border E-commerce · Internet and Technology"
+      title: "Content-Tiered Cost Control and Data-Annotation Quality Management"
+      profile: "A large digital-technology and cross-border e-commerce group operating a global online transaction platform for buyers and sellers."
+      scale: "Historical project scale: 72+ languages; 12 million+ source characters per year"
+      services: ["Website, software and app localization", "Multiple types of e-commerce data annotation"]
+      challenge:
+        - "Large content volumes required continuous localization and lower costs without compromising the quality of important content."
+        - "Across annotation tasks, guidelines were inconsistent and quality fluctuated over time."
+      approach:
+        - "Helped establish a matrix combining business value and content risk, assigning different cost levels, quality targets and delivery workflows to each tier."
+        - "Used AI tools to classify and route items before annotation, convert subjective quality expectations into checkable indicators and flag potential issues before delivery."
+        - "Continuously refined rules and checking tools using post-delivery issue records, creating a closed loop for annotation-quality improvement."
+
+    - id: "CASE 05"
+      industry: "Gaming · Internet and Technology"
+      title: "Game LQA Quality Standards and Issue Closure"
+      profile: "A well-known Chinese internet company with long-term experience developing premium online games for global release and operations."
+      scale: "Historical project scale: 28+ languages; 22 million+ source characters per year"
+      services: ["Game localization", "Multilingual game LQA"]
+      challenge:
+        - "Game LQA combines objective defects with subjective judgments about the player experience, making results difficult to measure consistently."
+        - "Inconsistent defect categories, severity levels and acceptance criteria could lead to quality fluctuations, disputes and repeated rework."
+      approach:
+        - "Helped establish subjective and objective game LQA indicators and align defect categories, severity rules and acceptance criteria."
+        - "Used issue records, fix confirmation, regression testing and issue summaries to create a closed loop and provide reusable input for later versions."
+
+cta:
+  eyebrow: "START WITH THE REQUIREMENT"
+  title: "Discuss Your Requirements"
+  description: "Tell us about the business context, target languages, content or data type, scale and timeline. We will recommend the most practical next step."
+  primary:
+    label: "Contact Us"
+    href: "/contact"
+  secondary:
+    label: "How We Work"
+    href: "/approach"

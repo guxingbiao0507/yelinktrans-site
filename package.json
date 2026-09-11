@@ -1,0 +1,36 @@
+{
+  "name": "yelinktrans-company-site",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "review:preview": "node scripts/create-bilingual-review-previews.mjs",
+    "review:english": "node scripts/create-bilingual-review-previews.mjs --locale=en",
+    "qa:static": "node scripts/qa-bilingual-static-output.mjs",
+    "qa:english-responsive": "node scripts/qa-english-responsive.mjs",
+    "typecheck": "nuxt typecheck"
+  },
+  "dependencies": {
+    "@nuxt/content": "3.15.2",
+    "@nuxt/icon": "2.5.0",
+    "@nuxtjs/i18n": "10.6.0",
+    "@nuxtjs/robots": "6.1.4",
+    "@nuxtjs/sitemap": "8.3.4",
+    "@iconify-json/lucide": "^1.2.83",
+    "better-sqlite3": "^12.2.0",
+    "nuxt": "4.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.2",
+    "vue-tsc": "^3.0.6"
+  },
+  "packageManager": "pnpm@11.16.0"
+}

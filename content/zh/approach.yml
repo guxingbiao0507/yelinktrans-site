@@ -1,0 +1,94 @@
+seo:
+  title: "协作方式｜从问题出发，让方案真正落地｜无锡源译"
+  description: "了解无锡源译如何通过需求诊断、方案设计、试点验证、交付实施和持续优化，推动多语言内容、数据与AI方案落地。"
+
+hero:
+  eyebrow: "WORKING APPROACH"
+  title: "从问题出发，让方案真正落地"
+  titleLines: ["从问题出发，", "让方案真正落地"]
+  description: "我们借鉴Forward Deployed Engineering（FDE）的协作思路，从客户的实际问题和约束出发，通过需求诊断、方案设计和小范围验证，降低不确定性，再进入稳定交付与持续优化。"
+  note: "FDE在这里代表一种贴近实际业务问题的协作方法，不等同于长期驻场，也不表示我们提供所有类型的软件开发服务。"
+  tags: ["DIAGNOSE", "VALIDATE", "DELIVER"]
+
+intro:
+  eyebrow: "WHY THIS APPROACH"
+  title: "先理解问题，再决定使用什么服务和工具"
+  paragraphs:
+    - "多语言项目的问题通常并不只来自翻译。内容类型、发布节奏、质量标准、供应商协作、数据结构和技术工具，都会影响最终结果。"
+    - "因此，我们不会一开始就把某个模型、工具或固定流程作为答案，而是先明确客户希望改善什么、哪些条件不能改变，以及什么结果可以被验证。"
+  callout: "语言服务经验＋AI工具与数据能力＋贴近业务的方案咨询"
+
+steps:
+  eyebrow: "FIVE-STAGE PROCESS"
+  title: "五个阶段，把复杂问题转化为可执行安排"
+  description: "每个阶段都形成明确的判断或交付物。项目可根据实际情况从其中某一阶段开始，也可以先完成小范围试点。"
+  items:
+    - number: "01"
+      icon: "lucide:target"
+      title: "需求诊断"
+      description: "了解业务目标、内容或数据类型、现有流程、质量问题、时间要求、预算约束和技术环境，确认真正需要解决的问题。"
+      outputs: ["需求与问题清单", "成功标准", "范围和约束"]
+    - number: "02"
+      icon: "lucide:clipboard-list"
+      title: "方案设计"
+      description: "组合语言人才、工作流程、AI工具、质量规则和数据方法，明确角色、交付物、质量目标、变更方式和验收口径。"
+      outputs: ["服务与流程方案", "角色与责任", "质量和验收标准"]
+    - number: "03"
+      icon: "lucide:flask-conical"
+      title: "试点验证"
+      description: "选择具有代表性的样本或小范围任务，验证质量、效率、成本和风险，记录问题并据实调整方案。"
+      outputs: ["试点样本与结果", "问题和风险记录", "调整建议"]
+    - number: "04"
+      icon: "lucide:rocket"
+      title: "交付实施"
+      description: "按照确认后的范围和流程进入实际项目，管理人员、时间节点、质量检查、问题升级和变更，确保方案能够持续执行。"
+      outputs: ["项目计划", "阶段性交付", "质量与进度记录"]
+    - number: "05"
+      icon: "lucide:refresh-cw"
+      title: "持续优化"
+      description: "复盘交付数据和问题记录，沉淀术语、规则、样本及回归结果，逐步改善质量、效率和协作方式。"
+      outputs: ["复盘与改进项", "语言和质量资产", "后续优化计划"]
+
+scenarios:
+  eyebrow: "WHEN IT FITS"
+  title: "以下情况，更适合采用这种协作方式"
+  description: "如果需求非常标准且范围稳定，可以直接进入常规交付；当问题跨越内容、流程、质量、数据或AI工具时，前期诊断与验证更有价值。"
+  items:
+    - title: "内容和语种持续增长"
+      description: "现有流程开始出现成本、时效、一致性或供应商协作压力。"
+    - title: "希望引入AI但缺少判断依据"
+      description: "需要评估模型、内容适用性、质量风险和人工复核深度。"
+    - title: "质量问题反复出现"
+      description: "问题能够被发现，却缺少统一标准、原因记录和回归复测。"
+    - title: "需求跨越多个环节"
+      description: "需要同时协调内容、数据、语言人才、工具和内部业务团队。"
+
+collaboration:
+  eyebrow: "CLEAR RESPONSIBILITIES"
+  title: "信息透明，责任清楚，才能减少反复"
+  titleLines: ["信息透明，责任清楚，", "才能减少反复"]
+  description: "我们会在启动前确认双方需要提供的信息和承担的责任。实际分工根据项目范围调整，不把关键前提留到交付末期才讨论。"
+  descriptionNoWrapText: "交付末期才讨论"
+  clientTitle: "客户侧通常需要"
+  clientItems:
+    - "说明业务目标、目标市场和使用场景"
+    - "提供必要的内容、样本、术语和现有流程信息"
+    - "确认内部决策人、反馈人和验收标准"
+    - "及时反馈需求变化和试点结果"
+  yelinkTitle: "源译侧通常负责"
+  yelinkItems:
+    - "梳理问题、风险、约束和可验证目标"
+    - "设计并说明服务、流程、工具和质量方案"
+    - "组织语言人才、试点和实际交付"
+    - "记录关键决策、问题、变更和改进结果"
+
+cta:
+  eyebrow: "START WITH A CONVERSATION"
+  title: "需求沟通"
+  description: "我们可以先根据现有信息判断：适合直接交付、先做样本试跑，还是需要进一步梳理流程和质量标准。"
+  primary:
+    label: "联系合作"
+    href: "/contact"
+  secondary:
+    label: "查看服务与经验"
+    href: "/services"

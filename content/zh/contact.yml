@@ -1,0 +1,61 @@
+seo:
+  title: "联系合作｜无锡源译"
+  description: "联系无锡源译，沟通多语言本地化翻译、AI解决方案与实施、多语言数据标注与采集，以及多语言内容测试与审核需求。"
+
+hero:
+  eyebrow: "CONTACT YELINKTRANS"
+  title: "联系合作"
+  description: "无论您已经有明确的项目需求，还是正在评估多语言内容、数据处理或AI方案，都可以先通过邮件与我们联系。"
+  note: "即使信息尚不完整，也可以先说明业务场景和希望解决的问题。"
+  tags: ["EMAIL", "PROJECT", "SOLUTION"]
+
+methods:
+  eyebrow: "CONTACT DETAILS"
+  title: "选择合适的邮箱，与我们开始沟通"
+  description: "请简要介绍您的业务场景和需求。我们会根据现有信息进行初步评估，并确认后续需要补充的资料、样本或沟通安排。"
+  items:
+    - icon: "lucide:mail"
+      label: "主要联系邮箱"
+      value: "James@yelinktrans.com"
+      href: "mailto:James@yelinktrans.com?subject=官网项目咨询"
+    - icon: "lucide:mail"
+      label: "其他联系邮箱"
+      value: "Mike@yelinktrans.com"
+      href: "mailto:Mike@yelinktrans.com?subject=官网项目咨询"
+    - icon: "lucide:building-2"
+      label: "所在地"
+      value: "中国·江苏·无锡"
+    - icon: "lucide:messages-square"
+      label: "沟通语言"
+      value: "中文、英文"
+
+brief:
+  eyebrow: "WHAT TO INCLUDE"
+  title: "为了更快了解需求，建议在邮件中说明"
+  description: "以下信息并非必须一次提供完整。能够确认多少就先说明多少，我们会据此判断下一步。"
+  items:
+    - title: "需要的服务"
+      description: "例如多语言本地化翻译、AI解决方案与实施、多语言数据标注与采集，或者多语言内容测试与审核。"
+    - title: "目标语种或市场"
+      description: "例如英语、日语、德语、阿拉伯语，或者具体的目标国家和地区。"
+    - title: "内容或数据类型"
+      description: "例如产品界面、帮助内容、营销内容、文本、图像、音频或测试素材。"
+    - title: "预计项目规模"
+      description: "可以提供大致字数、数据量、文件数量、语种数量或项目周期；暂时无法确定也没有关系。"
+    - title: "时间要求"
+      description: "包括预计启动时间、首次交付时间和整体完成时间。"
+    - title: "其他重要要求"
+      description: "例如质量标准、术语、技术环境、数据安全、保密要求或现有工作流程。"
+
+safety:
+  title: "首次沟通与资料安全提示"
+  paragraphs:
+    - "首次邮件中请尽量不要直接发送未经脱敏的个人信息、客户数据或受保密协议约束的完整文件。"
+    - "如需提供样本、测试数据或其他项目资料，我们可以在确认需求后进一步商定合适的传输方式。"
+
+primaryCta:
+  label: "发送项目咨询"
+  href: "mailto:James@yelinktrans.com?subject=官网项目咨询"
+secondaryCta:
+  label: "查看服务与经验"
+  href: "/services"

@@ -1,0 +1,120 @@
+seo:
+  title: "Yelinktrans | AI-Powered Multilingual Content, Data & Solutions"
+  description: "Yelinktrans helps Chinese companies expand into global markets through localization, multilingual data services, content testing and review, and AI solution design and implementation for language operations."
+
+hero:
+  eyebrow: "AI-POWERED MULTILINGUAL CONTENT, DATA & SOLUTIONS"
+  title: "Expertise That Translates"
+  highlight: "Value That Travels"
+  description: "We help Chinese companies expand into global markets with localization, multilingual data services, content testing and review, and practical AI solutions for language operations."
+  primaryCta:
+    label: "Contact Us"
+    href: "#contact"
+  secondaryCta:
+    label: "Explore Our Services"
+    href: "/services"
+  note: "Based in Wuxi, China | Chinese and English communication | Cross-time-zone support arranged on a project basis"
+
+claims:
+  - value: "180+"
+    label: "Languages Supported"
+    qualifier: "Current company capability"
+  - value: "20,000+"
+    label: "Global Linguist Network"
+    qualifier: "Current company capability"
+  - value: "16 Years"
+    label: "Localization Experience"
+    qualifier: "Core team historical experience"
+  - value: "127"
+    label: "Clients Served"
+    qualifier: "Core team historical experience"
+
+services:
+  eyebrow: "CORE SERVICES"
+  title: "Multilingual content, data and AI solutions for global growth"
+  mobileTitle: "Multilingual content,\ndata and AI solutions\nfor global growth"
+  description: "Drawing on 16 years of localization experience within our core team, we match language professionals, quality processes and AI tools to each content type, target market and delivery requirement—making quality, efficiency and cost easier to manage."
+  items:
+    - icon: "lucide:languages"
+      title: "Multilingual Localization"
+      description: "Localization for product interfaces, help content, marketing and operations, covering translation, review, terminology and style management, desktop publishing and language asset maintenance."
+    - icon: "lucide:sparkles"
+      title: "AI Solution Design & Implementation"
+      description: "Model and tool evaluation, sample pilots, AI translation, AI post-editing, automated quality checks and workflow implementation for translation, quality assurance and content operations."
+    - icon: "lucide:database-zap"
+      title: "Multilingual Data Annotation & Collection"
+      description: "Annotation and collection for multilingual text, image and audio data, including cleansing, classification, named entity recognition, transcription and parallel-corpus processing, with data collection available within mainland China by project."
+    - icon: "lucide:scan-search"
+      title: "Multilingual Content Testing & Review"
+      description: "Content testing and LQA using screenshots, recordings or physical devices, covering issue logging, verification, fix confirmation and regression testing across languages."
+
+industries:
+  eyebrow: "FOCUS INDUSTRIES"
+  title: "Industry Insight. Solutions Built for Global Growth."
+  description: "Every industry has its own content formats, risks and release cycles. We tailor terminology, quality standards, testing methods and AI solutions accordingly."
+  descriptionNoWrapText: "testing methods and AI solutions"
+  descriptionSingleLine: true
+  items:
+    - icon: "lucide:smartphone"
+      title: "Consumer Electronics"
+      description: "For smartphones, smart devices, wearables, in-vehicle systems and IoT products, we provide localization, terminology and quality management, content testing and review, and project-specific AI solutions."
+    - icon: "lucide:panels-top-left"
+      title: "Internet and Technology"
+      description: "For enterprise software, applications, platforms and digital content, we provide localization, terminology and quality management, content testing and review, and project-specific AI solutions."
+    - icon: "lucide:shopping-bag"
+      title: "Cross-Border E-commerce"
+      description: "For corporate websites, independent stores and e-commerce platforms, we provide localization for interface, product and marketing content, data annotation, content testing and review, and project-specific AI solutions."
+    - icon: "lucide:gamepad-2"
+      title: "Gaming"
+      description: "For in-game, live-operations and marketing content, we provide localization, terminology and quality management, content testing and review, and project-specific AI solutions."
+
+approach:
+  eyebrow: "WORKING APPROACH"
+  title: "Grounded in Business Needs. Built for Delivery."
+  description: "Inspired by Forward Deployed Engineering (FDE), we begin with the client's real needs, confirm goals and constraints, reduce uncertainty through a focused pilot, and then move into stable delivery and continuous improvement."
+  calloutItems: ["Language-service expertise", "AI and data capabilities", "Business-focused solution consulting"]
+  steps:
+    - number: "01"
+      title: "Needs Assessment"
+      description: "Clarify content, process, quality, timing, cost and data challenges, then define what success looks like."
+    - number: "02"
+      title: "Solution Design"
+      description: "Combine language professionals, workflows, AI tools, quality rules and data methods into a practical plan."
+    - number: "03"
+      title: "Pilot Validation"
+      description: "Test representative samples for quality, efficiency and risk, then refine the plan based on evidence."
+    - number: "04"
+      title: "Delivery & Implementation"
+      description: "Confirm roles, milestones, deliverables and acceptance criteria, then put the solution into operation."
+    - number: "05"
+      title: "Continuous Improvement"
+      description: "Capture terminology, rules, issues and regression results to create a reusable improvement loop."
+
+trust:
+  eyebrow: "WHY YELINKTRANS"
+  title: "Expertise Applied to Every Delivery"
+  description: "We turn industry experience into clear project rules, traceable delivery processes and quality results that can be verified."
+  items:
+    - icon: "lucide:history"
+      title: "16 Years of Core Team Experience"
+      description: "Our core team has supported large, complex multilingual programs and understands the demands of different content types, quality risks and delivery cycles."
+    - icon: "lucide:blend"
+      title: "Language Expertise, Business Understanding"
+      description: "We design around content, process, quality, timing, cost and data needs so that language and technology capabilities support real business goals."
+    - icon: "lucide:workflow"
+      title: "Transparent, Traceable Project Processes"
+      description: "Before work begins, we confirm scope, roles, deliverables, quality standards, milestones and change procedures, keeping key decisions and results traceable."
+    - icon: "lucide:user-round-check"
+      title: "Core Team Oversight at Critical Stages"
+      description: "Core team members participate in key requirements discussions, solution design and quality checkpoints to keep commitments aligned with delivery."
+    - icon: "lucide:file-check-2"
+      title: "Closed-Loop Quality Management"
+      description: "Terminology, rules, sampling, LQA, issue records and regression testing support a complete cycle of identification, correction, confirmation and improvement."
+
+contact:
+  eyebrow: "START A CONVERSATION"
+  title: "Work With Us"
+  description: "Tell us about the languages, content type, project scale and timeline you have in mind. We will review the information and respond promptly."
+  primaryCta:
+    label: "Email Us"
+    href: "mailto:James@yelinktrans.com?subject=Website%20Project%20Inquiry"
