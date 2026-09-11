@@ -79,18 +79,19 @@ git push -u origin main
 
 3. 打开 GitHub 仓库 **Settings → Pages**：
    - **Source** 选择 **GitHub Actions**
-4. 等待 Actions 工作流完成后，访问：
-   - 项目站点：`https://<用户名>.github.io/<仓库名>/`
-   - 用户站点（仓库名为 `<用户名>.github.io`）：`https://<用户名>.github.io/`
+   - **Custom domain** 填写 `yelinktrans.com` 并启用 **Enforce HTTPS**
+4. 在 DNS 服务商为 `yelinktrans.com` 添加 GitHub Pages 要求的解析记录，且不要影响 Microsoft 365 邮箱记录（见 `docs/DNS_MICROSOFT_365.md`）。
+5. 等待 Actions 工作流完成后，正式访问地址为 `https://yelinktrans.com`。
 
-### 自定义域名（可选）
-
-若使用 `yelinktrans.com` 作为 GitHub Pages 域名，在仓库 **Settings → Secrets and variables → Actions → Variables** 中设置：
+默认构建配置：
 
 - `NUXT_PUBLIC_SITE_URL` = `https://yelinktrans.com`
 - `NUXT_APP_BASE_URL` = `/`
 
-并在 **Settings → Pages → Custom domain** 填写 `yelinktrans.com`。DNS 需按 GitHub 文档添加相应记录，且不要影响 Microsoft 365 邮箱记录（见 `docs/DNS_MICROSOFT_365.md`）。
+如需临时改回 GitHub 预览地址，可在仓库 **Settings → Secrets and variables → Actions → Variables** 中覆盖上述变量，例如：
+
+- `NUXT_PUBLIC_SITE_URL` = `https://<用户名>.github.io`
+- `NUXT_APP_BASE_URL` = `/<仓库名>/`
 
 ### 本地预览构建结果
 

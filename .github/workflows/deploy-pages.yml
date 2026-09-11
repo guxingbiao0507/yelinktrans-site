@@ -37,15 +37,13 @@ jobs:
           if [ -n "${{ vars.NUXT_PUBLIC_SITE_URL }}" ]; then
             echo "NUXT_PUBLIC_SITE_URL=${{ vars.NUXT_PUBLIC_SITE_URL }}" >> "$GITHUB_ENV"
           else
-            echo "NUXT_PUBLIC_SITE_URL=https://${{ github.repository_owner }}.github.io" >> "$GITHUB_ENV"
+            echo "NUXT_PUBLIC_SITE_URL=https://yelinktrans.com" >> "$GITHUB_ENV"
           fi
 
           if [ -n "${{ vars.NUXT_APP_BASE_URL }}" ]; then
             echo "NUXT_APP_BASE_URL=${{ vars.NUXT_APP_BASE_URL }}" >> "$GITHUB_ENV"
-          elif [ "${{ github.event.repository.name }}" = "${{ github.repository_owner }}.github.io" ]; then
-            echo "NUXT_APP_BASE_URL=/" >> "$GITHUB_ENV"
           else
-            echo "NUXT_APP_BASE_URL=/${{ github.event.repository.name }}/" >> "$GITHUB_ENV"
+            echo "NUXT_APP_BASE_URL=/" >> "$GITHUB_ENV"
           fi
 
       - name: Install dependencies
