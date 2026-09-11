@@ -93,6 +93,82 @@ git push -u origin main
 - `NUXT_PUBLIC_SITE_URL` = `https://<用户名>.github.io`
 - `NUXT_APP_BASE_URL` = `/<仓库名>/`
 
+### 迁移到 yelinktrans 组织
+
+若希望 GitHub 预览地址从 `https://guxingbiao0507.github.io/yelinktrans-site/` 变为 `https://yelinktrans.github.io/yelinktrans-site/`，需要把仓库转移到名为 `yelinktrans` 的 GitHub 用户或组织下。预览地址格式为 `https://<所有者>.github.io/<仓库名>/`，无法在代码里单独修改 `<所有者>` 部分。
+
+#### 前置条件
+
+1. 已创建 GitHub 组织（或用户）`yelinktrans`，且你拥有管理员权限。
+2. 组织名称未被他人占用；若不可用，只能更换组织名，预览域名会随之改变。
+3. 迁移前确认当前 Actions 最近一次部署成功，避免带着未修复问题迁移。
+
+#### 迁移步骤
+
+**1. 在 GitHub 转移仓库**
+
+打开原仓库 **Settings → General → Danger Zone → Transfer ownership**，将 `guxingbiao0507/yelinktrans-site` 转移到 `yelinktrans` 组织。
+
+转移后仓库地址变为：
+
+`https://github.com/yelinktrans/yelinktrans-site`
+
+**2. 更新本地 git remote**
+
+```bash
+git remote set-url origin git@github.com:yelinktrans/yelinktrans-site.git
+git remote -v
+git push -u origin main
+```
+
+**3. 在新仓库重新启用 GitHub Pages**
+
+打开 `https://github.com/yelinktrans/yelinktrans-site/settings/pages`：
+
+- **Source** 选择 **GitHub Actions**
+- **Custom domain** 填写 `yelinktrans.com`（若继续使用正式域名）
+- DNS 生效后启用 **Enforce HTTPS**
+
+迁移后 Custom domain 和 DNS 不会自动继承，需在新仓库里重新保存一次域名设置。
+
+**4. 检查 Actions 与 DNS**
+
+- 在 **Actions** 页确认 `Deploy to GitHub Pages` 工作流运行成功。
+- 若使用 `yelinktrans.com`，按 `docs/DNS_MICROSOFT_365.md` 核对解析记录，确保未影响 Microsoft 365 邮箱。
+
+**5. 验证访问地址**
+
+| 用途 | 地址 |
+|------|------|
+| GitHub 预览（项目站点） | `https://yelinktrans.github.io/yelinktrans-site/` |
+| 正式域名 | `https://yelinktrans.com` |
+
+默认构建仍指向正式域名 `https://yelinktrans.com`，与 GitHub 预览地址可以并存。正式域名生效前，可临时在 Actions Variables 中设置：
+
+- `NUXT_PUBLIC_SITE_URL` = `https://yelinktrans.github.io`
+- `NUXT_APP_BASE_URL` = `/yelinktrans-site/`
+
+#### 可选：去掉预览路径中的 `/yelinktrans-site/`
+
+若希望预览地址为 `https://yelinktrans.github.io/`（根路径），需同时满足：
+
+1. 仓库位于 `yelinktrans` 组织（或用户）下；
+2. 仓库改名为 `yelinktrans.github.io`。
+
+此时 GitHub 会按组织站点规则发布，构建变量应设为：
+
+- `NUXT_PUBLIC_SITE_URL` = `https://yelinktrans.github.io`
+- `NUXT_APP_BASE_URL` = `/`
+
+改名会影响现有链接和协作者书签，仅在确实需要根路径预览时再执行。
+
+#### 迁移后常见问题
+
+- **预览地址 404**：确认 Pages Source 为 GitHub Actions，且最近一次 workflow 成功。
+- **样式或资源加载失败**：通常是 `NUXT_APP_BASE_URL` 与实际访问路径不一致，按上表核对 Variables。
+- **正式域名未生效**：在新仓库 Pages 设置中重新填写 `yelinktrans.com`，并检查 DNS 是否仍指向 GitHub Pages。
+- **邮箱异常**：优先按 `docs/DNS_MICROSOFT_365.md` 回滚 DNS，不要为网站上线牺牲邮箱服务。
+
 ### 本地预览构建结果
 
 ```bash
