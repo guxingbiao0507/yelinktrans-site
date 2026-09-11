@@ -45,25 +45,17 @@ pnpm qa:english-responsive
 
 ### 命令（Windows PowerShell）
 
-在项目根目录执行：
+推荐：
 
 ```powershell
-corepack enable
-pnpm install --frozen-lockfile
-
-$env:NUXT_PUBLIC_SITE_URL = 'https://yelinktrans.com'
-pnpm typecheck
-pnpm generate
-pnpm qa:static
-pnpm qa:english-responsive
+pnpm package:nginx
 ```
 
-可选：复制到 `dist/` 目录，便于上传 Nginx 或打 zip 包：
+该命令调用 `scripts/build-windows.ps1`，会自动安装依赖、类型检查、静态生成、QA 校验，并同步产物到 `.output/public/` 与 `dist/`。
+
+可选：打 zip 包便于上传：
 
 ```powershell
-if (Test-Path dist) { Remove-Item -Recurse -Force dist }
-robocopy .output\public dist /E
-
 $stamp = Get-Date -Format 'yyyyMMdd-HHmm'
 Compress-Archive -Path dist\* -DestinationPath "yelinktrans-site-$stamp.zip" -Force
 ```
@@ -72,8 +64,9 @@ Windows 注意事项：
 
 1. 使用 PowerShell 设置 `$env:NUXT_PUBLIC_SITE_URL`，不要使用 Linux 风格的 `VAR=value command` 前缀写法；
 2. `robocopy` 返回码 `0` 或 `1` 通常都表示复制成功；
-3. 若出现 `EBUSY: resource busy or locked, rmdir '.output'`，说明 `.output` 被预览进程占用；关闭 `pnpm preview` / `pnpm dev` 后重新执行 `pnpm generate`；
-4. 部署到 Nginx 时可不发布 `CNAME` 文件；该文件仅服务 GitHub Pages 自定义域名。
+3. 若 `pnpm generate` 报 `EBUSY: resource busy or locked, rmdir '.output'`，说明 `.output` 被预览进程占用；优先改用 `pnpm package:nginx`，或关闭 `pnpm preview` / `pnpm dev` 后重试；
+4. 不要在 `generate` 失败后继续执行 `pnpm qa:static`；QA 依赖 `.output/public/index.html`，需先成功完成构建；
+5. 部署到 Nginx 时可不发布 `CNAME` 文件；该文件仅服务 GitHub Pages 自定义域名。
 
 ### 构建产物
 

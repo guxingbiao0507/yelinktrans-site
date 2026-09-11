@@ -1,6 +1,10 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
+import path from 'node:path'
+import { pathToFileURL } from 'node:url'
 
-const publicDir = new URL('../.output/public/', import.meta.url)
+const publicDir = process.env.STATIC_OUTPUT_DIR
+  ? pathToFileURL(path.resolve(process.env.STATIC_OUTPUT_DIR) + path.sep)
+  : new URL('../.output/public/', import.meta.url)
 const reportDir = new URL('../qa-v07-bilingual/', import.meta.url)
 const routes = [
   { path: '/', file: 'index.html', locale: 'zh', lang: 'zh-CN', title: '无锡源译｜AI驱动的多语言内容服务、数据与解决方案' },

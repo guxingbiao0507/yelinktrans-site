@@ -15,7 +15,8 @@
     "review:english": "node scripts/create-bilingual-review-previews.mjs --locale=en",
     "qa:static": "node scripts/qa-bilingual-static-output.mjs",
     "qa:english-responsive": "node scripts/qa-english-responsive.mjs",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "package:nginx": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-windows.ps1"
   },
   "dependencies": {
     "@nuxt/content": "3.15.2",

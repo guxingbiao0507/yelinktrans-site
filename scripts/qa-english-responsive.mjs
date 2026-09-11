@@ -1,11 +1,16 @@
 import { readFile } from 'node:fs/promises'
+import path from 'node:path'
+import { pathToFileURL } from 'node:url'
 
 const root = new URL('../', import.meta.url)
+const staticRoot = process.env.STATIC_OUTPUT_DIR
+  ? pathToFileURL(path.resolve(process.env.STATIC_OUTPUT_DIR) + path.sep)
+  : new URL('.output/public/', root)
 const sourceCss = await readFile(new URL('app/assets/css/main.css', root), 'utf8')
 const css = sourceCss.replace(/\s+/g, ' ')
-const enHome = await readFile(new URL('.output/public/en/index.html', root), 'utf8')
-const enServices = await readFile(new URL('.output/public/en/services/index.html', root), 'utf8')
-const enApproach = await readFile(new URL('.output/public/en/approach/index.html', root), 'utf8')
+const enHome = await readFile(new URL('en/index.html', staticRoot), 'utf8')
+const enServices = await readFile(new URL('en/services/index.html', staticRoot), 'utf8')
+const enApproach = await readFile(new URL('en/approach/index.html', staticRoot), 'utf8')
 const finalHtml = await readFile(new URL('deliverables/源译官网_英文版_定稿_V1.2.html', root), 'utf8')
 
 function block(selector) {
