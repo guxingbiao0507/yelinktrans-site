@@ -32,22 +32,62 @@
 - 启用Corepack；
 - pnpm版本由项目 `packageManager` 字段固定。
 
-### 命令
+### 命令（Linux / macOS）
 
 ```bash
 corepack enable
 pnpm install --frozen-lockfile
 NUXT_PUBLIC_SITE_URL=https://yelinktrans.com pnpm typecheck
 NUXT_PUBLIC_SITE_URL=https://yelinktrans.com pnpm generate
+pnpm qa:static
+pnpm qa:english-responsive
 ```
 
-构建产物位于：
+### 命令（Windows PowerShell）
+
+在项目根目录执行：
+
+```powershell
+corepack enable
+pnpm install --frozen-lockfile
+
+$env:NUXT_PUBLIC_SITE_URL = 'https://yelinktrans.com'
+pnpm typecheck
+pnpm generate
+pnpm qa:static
+pnpm qa:english-responsive
+```
+
+可选：复制到 `dist/` 目录，便于上传 Nginx 或打 zip 包：
+
+```powershell
+if (Test-Path dist) { Remove-Item -Recurse -Force dist }
+robocopy .output\public dist /E
+
+$stamp = Get-Date -Format 'yyyyMMdd-HHmm'
+Compress-Archive -Path dist\* -DestinationPath "yelinktrans-site-$stamp.zip" -Force
+```
+
+Windows 注意事项：
+
+1. 使用 PowerShell 设置 `$env:NUXT_PUBLIC_SITE_URL`，不要使用 Linux 风格的 `VAR=value command` 前缀写法；
+2. `robocopy` 返回码 `0` 或 `1` 通常都表示复制成功；
+3. 若出现 `EBUSY: resource busy or locked, rmdir '.output'`，说明 `.output` 被预览进程占用；关闭 `pnpm preview` / `pnpm dev` 后重新执行 `pnpm generate`；
+4. 部署到 Nginx 时可不发布 `CNAME` 文件；该文件仅服务 GitHub Pages 自定义域名。
+
+### 构建产物
 
 ```text
 .output/public/
 ```
 
-只部署该目录，不要把 `node_modules`、`.nuxt`、源内容文件或审核材料放到公网目录。
+可选本地打包目录（Windows 常用）：
+
+```text
+dist/
+```
+
+只部署上述静态目录中的内容，不要把 `node_modules`、`.nuxt`、源内容文件或审核材料放到公网目录。
 
 ## 4. 常见平台配置
 
@@ -84,7 +124,9 @@ NUXT_PUBLIC_SITE_URL=https://yelinktrans.com pnpm generate
 
 ### Nginx服务器
 
-将静态文件复制到例如 `/var/www/yelinktrans/`，参考上线包中的 `04_服务器配置示例/nginx.conf.example`。启用配置前，需要将证书路径和服务器文件路径替换为实际值，并先运行 `nginx -t`。
+将静态文件复制到例如 `/var/www/yelinktrans/`（Windows 可为 `C:\nginx\html\yelinktrans\` 或 `C:\inetpub\yelinktrans\`），参考 `deploy/nginx.conf.example`。启用配置前，需要将证书路径和服务器文件路径替换为实际值，并先运行 `nginx -t`。
+
+Windows 本地打包后，可用 `robocopy dist \\server\share\yelinktrans /MIR`、WinSCP、RDP 复制或 zip 上传等方式发布；无论哪种方式，服务器网站根目录中都应直接看到 `index.html`。
 
 ## 5. 预发布要求
 

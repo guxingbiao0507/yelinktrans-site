@@ -62,6 +62,43 @@ pnpm preview
 
 正式部署时，只需要把 `.output/public/` 目录中的内容上传到静态网站根目录。完整操作见 `docs/DEPLOYMENT.md`。
 
+### Windows 打包（Nginx / 静态托管）
+
+在 **PowerShell** 中于项目根目录执行：
+
+```powershell
+corepack enable
+pnpm install --frozen-lockfile
+
+$env:NUXT_PUBLIC_SITE_URL = 'https://yelinktrans.com'
+pnpm typecheck
+pnpm generate
+pnpm qa:static
+pnpm qa:english-responsive
+```
+
+构建产物默认位于 `.output/public/`。为方便上传到 Nginx 服务器，可复制到 `dist/`：
+
+```powershell
+if (Test-Path dist) { Remove-Item -Recurse -Force dist }
+robocopy .output\public dist /E
+```
+
+打包为 zip 以便传输：
+
+```powershell
+$stamp = Get-Date -Format 'yyyyMMdd-HHmm'
+Compress-Archive -Path dist\* -DestinationPath "yelinktrans-site-$stamp.zip" -Force
+```
+
+部署到 Nginx 时，上传 `dist/`（或 `.output/public/`）**里面的全部文件**到网站根目录，例如 `C:\inetpub\yelinktrans\` 或 Linux 上的 `/var/www/yelinktrans/`。根目录下应直接看到 `index.html`、`_nuxt/`、`en/`，不要多套一层文件夹。
+
+说明：
+
+- 纯 Nginx 部署可忽略 `dist/CNAME`（该文件仅用于 GitHub Pages 自定义域名）。
+- 若 `pnpm generate` 报 `.output` 目录被占用，先关闭正在运行的 `pnpm preview` 或 `pnpm dev`，再重试。
+- Windows 与 Linux 使用相同环境变量；正式域名固定为 `https://yelinktrans.com` 时无需设置 `NUXT_APP_BASE_URL`（默认为 `/`）。
+
 ## 内容维护位置
 
 - 中文内容：`content/zh/`
