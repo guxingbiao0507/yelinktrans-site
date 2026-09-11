@@ -66,14 +66,14 @@ NUXT_PUBLIC_SITE_URL=https://yelinktrans.com pnpm generate
 
 ### 首次启用步骤
 
-1. 在 GitHub 创建空仓库（例如 `yelinktrans-site`），不要勾选初始化 README。
+1. 在 GitHub 创建空仓库（推荐命名为 `yelinktrans.github.io` 以使用组织根域名预览），不要勾选初始化 README。
 2. 在本项目根目录执行：
 
 ```bash
 git init -b main
 git add -A
 git commit -m "Initial commit"
-git remote add origin https://github.com/<你的用户名>/<仓库名>.git
+git remote add origin git@github.com:yelinktrans/yelinktrans.github.io.git
 git push -u origin main
 ```
 
