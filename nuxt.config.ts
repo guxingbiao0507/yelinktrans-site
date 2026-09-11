@@ -1,5 +1,38 @@
 const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://yelinktrans.com'
 const baseURL = process.env.NUXT_APP_BASE_URL || '/'
+const isSubpathDeploy = baseURL !== '/'
+
+function resolveSiteOrigin(url: string) {
+  try {
+    return new URL(url).origin
+  } catch {
+    return url
+  }
+}
+
+function resolvePublicSiteUrl(url: string, base: string) {
+  try {
+    const parsed = new URL(url)
+    const normalizedBase = base === '/' ? '' : base.replace(/\/+$/, '')
+
+    if (parsed.pathname && parsed.pathname !== '/') {
+      return url.replace(/\/+$/, '')
+    }
+
+    return normalizedBase ? `${parsed.origin}${normalizedBase}` : parsed.origin
+  } catch {
+    return url
+  }
+}
+
+const siteOrigin = resolveSiteOrigin(siteUrl)
+const publicSiteUrl = resolvePublicSiteUrl(siteUrl, baseURL)
+const prerenderRoutes = [
+  '/', '/services', '/approach', '/contact', '/privacy',
+  '/en', '/en/services', '/en/approach', '/en/contact', '/en/privacy',
+  '/sitemap.xml',
+  ...(isSubpathDeploy ? [] : ['/robots.txt'])
+]
 
 export default defineNuxtConfig({
   compatibilityDate: '2026-08-01',
@@ -28,27 +61,27 @@ export default defineNuxtConfig({
     }
   },
   site: {
-    url: siteUrl,
+    url: publicSiteUrl,
     name: '无锡源译｜Yelinktrans'
   },
   runtimeConfig: {
     public: {
-      siteUrl
+      siteUrl: publicSiteUrl
     }
   },
   i18n: {
     strategy: 'prefix_except_default',
     defaultLocale: 'zh',
-    baseUrl: siteUrl,
+    baseUrl: siteOrigin,
     detectBrowserLanguage: false,
     locales: [
       { code: 'zh', name: '简体中文', language: 'zh-CN' },
       { code: 'en', name: 'English', language: 'en-US' }
     ]
   },
-  robots: {
-    disallow: []
-  },
+  robots: isSubpathDeploy
+    ? { robotsTxt: false, disallow: [] }
+    : { disallow: [] },
   sitemap: {
     autoI18n: false,
     zeroRuntime: true,
@@ -106,11 +139,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: [
-        '/', '/services', '/approach', '/contact', '/privacy',
-        '/en', '/en/services', '/en/approach', '/en/contact', '/en/privacy',
-        '/robots.txt', '/sitemap.xml'
-      ]
+      routes: prerenderRoutes
     }
   },
   typescript: {
