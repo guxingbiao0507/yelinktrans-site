@@ -148,22 +148,30 @@ git push -u origin main
 - `NUXT_PUBLIC_SITE_URL` = `https://yelinktrans.github.io`
 - `NUXT_APP_BASE_URL` = `/yelinktrans-site/`
 
-#### 可选：去掉预览路径中的 `/yelinktrans-site/`
+#### 使用 `https://yelinktrans.github.io`（无 `/yelinktrans-site/` 后缀）
 
-若希望预览地址为 `https://yelinktrans.github.io/`（根路径），需同时满足：
+**可以。** GitHub 组织站点的根域名规则是：仓库必须命名为 `yelinktrans.github.io`，且位于 `yelinktrans` 组织下。
 
-1. 仓库位于 `yelinktrans` 组织（或用户）下；
-2. 仓库改名为 `yelinktrans.github.io`。
+当前仓库名为 `yelinktrans-site`，因此预览地址只能是 `https://yelinktrans.github.io/yelinktrans-site/`。
 
-此时 GitHub 会按组织站点规则发布，构建变量应设为：
+若希望直接使用 `https://yelinktrans.github.io`：
 
-- `NUXT_PUBLIC_SITE_URL` = `https://yelinktrans.github.io`
-- `NUXT_APP_BASE_URL` = `/`
+1. 在 GitHub 将仓库 **Rename** 为 `yelinktrans.github.io`；
+2. 更新本地 remote：
 
-改名会影响现有链接和协作者书签，仅在确实需要根路径预览时再执行。
+```bash
+git remote set-url origin git@github.com:yelinktrans/yelinktrans.github.io.git
+```
+
+3. 仓库改名后，GitHub Pages 会自动发布到组织根路径；本项目默认构建已是 `NUXT_APP_BASE_URL=/`，通常无需再改变量；
+4. 若暂时只用 GitHub 预览、尚未绑定 `yelinktrans.com`，可在 Actions Variables 中设置 `NUXT_PUBLIC_SITE_URL=https://yelinktrans.github.io`；
+5. 若同时保留正式域名 `yelinktrans.com`，继续在新仓库 Pages 设置中填写 Custom domain 即可，两个地址可并存。
+
+改名会影响现有链接和协作者书签，执行前请同步团队。
 
 #### 迁移后常见问题
 
+- **构建报错 `Dependencies lock file is not found` / 找不到 `package-lock.json`**：说明仓库里存在 GitHub 自动生成的 Nuxt 工作流（如 `nuxtjs.yml`），它误用 npm 而非 pnpm。删除多余 workflow，仅保留 `.github/workflows/deploy-pages.yml`，并在 Pages 设置中将 Source 选为 **GitHub Actions**。
 - **预览地址 404**：确认 Pages Source 为 GitHub Actions，且最近一次 workflow 成功。
 - **样式或资源加载失败**：通常是 `NUXT_APP_BASE_URL` 与实际访问路径不一致，按上表核对 Variables。
 - **正式域名未生效**：在新仓库 Pages 设置中重新填写 `yelinktrans.com`，并检查 DNS 是否仍指向 GitHub Pages。
